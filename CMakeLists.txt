@@ -6,11 +6,16 @@ find_package(OpenGL REQUIRED)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(
+        $ENV{USERPROFILE}/Downloads/glew-2.1.0-win32/glew-2.1.0/include
+        $ENV{USERPROFILE}/Downloads/glfw-3.2.1.bin.WIN64/glfw-3.2.1.bin.WIN64/include
+        $ENV{USERPROFILE}/Downloads/glm-0.9.9.2/glm
         C:/glew-2.1.0/include
         C:/glfw-3.1.1.bin.WIN64/include
         C:/glm-0.9.9.0
 )
 link_directories(
+        $ENV{USERPROFILE}/Downloads/glfw-3.2.1.bin.WIN64/glfw-3.2.1.bin.WIN64/lib-vc2015
+        $ENV{USERPROFILE}/Downloads/glew-2.1.0-win32/glew-2.1.0/lib/Release/x64
         C:/glew-2.1.0/lib/Release/x64
         C:/glfw-3.1.1.bin.WIN64/lib-vc2013
 )
